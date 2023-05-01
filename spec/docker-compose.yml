@@ -1,0 +1,19 @@
+version: "3.2"
+services:
+  tester:
+    image: 858049876441.dkr.ecr.eu-west-1.amazonaws.com/<%= @project_name %>:<%= @tag %>
+    
+    build:
+      context: ..
+
+    environment:
+      - FRONTEND_ENV=test
+<% unless @volumes.empty?  %>      
+    volumes:
+<% @volumes.each do |v| %>
+      - <%= v %>
+<% end %>
+<% end %>
+
+    command:
+      "echo 'fake tests succeeded'"

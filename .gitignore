@@ -1,0 +1,5 @@
+dist/
+coverage/
+yarn-error.log
+spec/docker-compose.run.yml
+node_modules

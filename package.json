@@ -1,0 +1,28 @@
+{
+  "name": "fxnet-auth-proxy",
+  "version": "1.0.0",
+  "description": "protecting a service with auth's credentials",
+  "main": "src/index.js",
+  "repository": "https://github.com/fxnet/fxnet-auth-proxy",
+  "author": "Peter Scrhammel peter.schrammel@gmx.de",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cookie": "^0.4.1",
+    "http-proxy": "^1.18.1",
+    "intuit-oauth": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5",
+    "log": "^6.0.0",
+    "log-node": "^7.0.0",
+    "node-jose": "^2.0.0",
+    "nodemon": "^2.0.4",
+    "openid-client": "^5.0.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.10.0"
+  }
+}

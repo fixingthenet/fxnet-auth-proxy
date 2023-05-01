@@ -1,0 +1,10 @@
+{
+  "project": "fxnet-auth-proxy",
+    
+  "git": "github.com/fxnet/fxnet-auth-proxy",
+  "path": "fxnet-auth-proxy",
+  "docker": {
+    "repo": "fxnet",
+    "name": "fxnet-auth-proxy"
+  }
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $METODA_ENV == "dev" ]; then
+  exec yarn exec nodemon nodejs src/index.js
+else
+  exec nodejs src/index.js
+fi

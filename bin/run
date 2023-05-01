@@ -1,0 +1,11 @@
+#! /bin/bash
+
+set -e
+
+if [ $APP_ENV == "dev" ]; then
+  rm -rf /code/node_modules
+  ln -s /install/node_modules /code/node_modules
+  exec nodemon node src/index.js
+else
+  exec node src/index.js
+fi
